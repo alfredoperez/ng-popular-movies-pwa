@@ -1,0 +1,7 @@
+<md-list>
+  <md-list-item *ngFor="let movie of movies | async" [routerLink]="['movie', movie.id]">
+    <img md-list-avatar [src]="posterUrl + movie.poster_path" [alt]="movie.title + ' Poster'">
+    <h4 md-line>{{movie.title}}</h4>
+    <p md-line> {{movie.overview}} </p>
+  </md-list-item>
+</md-list>
