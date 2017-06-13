@@ -7,23 +7,19 @@ import { MaterialModule } from '@angular/material';
 import { MoviesService } from './services/movies.service';
 import { NavbarService } from './services/navbar.service';
 
-import { AppRoutingModule } from './app-routing.module';
+import { routing } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { MovieComponent } from './movie/movie.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent,
-    MovieComponent
+    AppComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'ng-popular-movies-pwa' }),
     HttpModule,
     BrowserAnimationsModule,
     MaterialModule,
-    AppRoutingModule
+    routing
   ],
   providers: [
     MoviesService,
