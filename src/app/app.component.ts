@@ -5,6 +5,7 @@ import { Subscription } from 'rxjs';
 import { NavbarService } from './services/navbar.service';
 
 @Component({
+  moduleId: module.id,
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']

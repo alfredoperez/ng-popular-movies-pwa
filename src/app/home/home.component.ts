@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { MoviesService } from '../services/movies.service';
 
 @Component({
+  moduleId: module.id,
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']

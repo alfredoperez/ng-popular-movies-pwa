@@ -7,6 +7,7 @@ import { MoviesService } from '../services/movies.service';
 import { NavbarService } from '../services/navbar.service';
 
 @Component({
+  moduleId: module.id,
   selector: 'app-movie',
   templateUrl: './movie.component.html',
   styleUrls: ['./movie.component.scss']
