@@ -1,4 +1,5 @@
 export const environment = {
   production: true,
-  moviedb: null
+  moviedb: null,
+  applicationServerKey: null
 };
