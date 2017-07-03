@@ -6,10 +6,6 @@ branches:
   only:
     - master
 before_install:
-  - cd src/environments
-  - rm -rf environment.prod.ts
-  - openssl aes-256-cbc -K $encrypted_8196fe15b41f_key -iv $encrypted_8196fe15b41f_iv -in environment.prod.ts.enc -out environment.prod.ts -d
-  - cd ../../
 install:
   - npm install -g firebase-tools
   - npm install -g @angular/cli
